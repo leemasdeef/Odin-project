@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="title-container">
+        <h1 class="title">My Library</h1>
+    </div>
+
+    <section class="library">
+        
+    </section>
+
+    <div class="newbook-container">
+            <button id="new-book">New Book</button>
+    </div>
+
+    <!-- new book form modal -->
+     <dialog id="form-dialog">
+        <form action="" method="dialog">
+            <div id="form-container">
+                <label for="title" class="">Title:<input type="text" id="title" ></label>
+                <label for="author" class="">Author:<input type="text" id="author" ></label>
+                <label for="pages" class="">Pages:<input type="number" id="pages"></label>
+                <label>
+                    Read?: 
+                    <select id="read" required>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </label>
+            </div>
+                <button value="cancel" formmethod="dialog">Cancel</button>
+                <button id="add-btn" value="default">Add</button>
+        </form>
+     </dialog>
+
+    <script src="script.js"></script>
+</body>
+</html>
